@@ -1,6 +1,6 @@
 FROM lissonpsantos2/debian:latest
 
-MAINTAINER Alisson Pereira dos Santos <lissonpsantos2@gmail.com>
+MAINTAINER Rodrigo Silva Rodrigues <rfinformatica.cba@gmail.com>
 
 #IMAGE VARIABLES
 ENV PEC_FOLDER /opt/e-SUS/jboss-as-7.2.0.Final/bin/init.d/jboss-as-standalone-lsb.sh
