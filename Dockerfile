@@ -1,4 +1,4 @@
-FROM lissonpsantos2/debian-jessie-basic:latest
+FROM lissonpsantos2/debian:latest
 
 MAINTAINER Alisson Pereira dos Santos <lissonpsantos2@gmail.com>
 
