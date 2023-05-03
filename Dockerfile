@@ -1,4 +1,4 @@
-FROM doug260188/debian:latest
+FROM debian:latest
 
 MAINTAINER Rodrigo Silva Rodrigues <rfinformatica.cba@gmail.com>
 
@@ -29,10 +29,10 @@ RUN unzip pec.zip -d /home/PEC/install
 WORKDIR /home/PEC/install
 
 #LOCALE PT_BR
-RUN curl -o /etc/locale.gen https://raw.githubusercontent.com/lissonpsantos2/pec-docker-image/master/locale #redo
+RUN curl -o /etc/locale.gen https://raw.githubusercontent.com/doug260188/pec-docker-image/master/locale #redo
 
 #JAVA.CONF FILE
-RUN curl -o /etc/java.conf https://raw.githubusercontent.com/lissonpsantos2/pec-docker-image/master/javaconf #redo
+RUN curl -o /etc/java.conf https://raw.githubusercontent.com/doug260188/pec-docker-image/master/javaconf #redo
 
 RUN apt-get install -y locales
 RUN locale-gen
