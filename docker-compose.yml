@@ -1,7 +1,7 @@
 version: '2'
 services:
   pec-app:
-    image: lissonpsantos2/debian-pec:3.2.24
+    image: doug/debian:latest
     restart: always
     volumes:
       - ./:/pec-docker/
