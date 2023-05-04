@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage(build) {
             steps {
-                echo 'ola'
+                sh ''' docker-compose up -d https://github.com/doug260188/pec-docker-image/blob/main/docker-compose.yml'''
 
             }
         }
