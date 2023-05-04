@@ -1,6 +1,6 @@
 FROM debian
 
-MAINTAINER Rodrigo Silva Rodrigues
+#MAINTAINER Rodrigo Silva Rodrigues
 
 #IMAGE VARIABLES
 ENV PEC_FOLDER /opt/e-SUS/jboss-as-7.2.0.Final/bin/init.d/jboss-as-standalone-lsb.sh
