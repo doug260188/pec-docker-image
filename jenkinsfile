@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage(image) {
             steps {
-                sh ''' docker-compose up -d docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'''
+                sh 'docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'
 
             }
         }
