@@ -1,14 +1,19 @@
 pipeline {
     agent any
-
-
-    stages{
-        stage(image) {
+    stages {
+        stage('Setup') {
             steps {
-                sh 'docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'
-
+                sh '''
+                    sudo apt-get update
+                    sudo apt-get install -y docker-compose
+                '''
             }
         }
-
+        stage('Run Container') {
+            steps {
+                sh 'docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'
+            }
+        }
     }
 }
+
