@@ -1,14 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Setup') {
-            steps {
-                sh '''
-                    sudo apt-get update
-                    sudo apt-get install -y docker-compose
-                '''
-            }
-        }
         stage('Run Container') {
             steps {
                 sh 'docker-compose up -d /home/rodrigo/pec-docker-image/docker-compose.yml'
