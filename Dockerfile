@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM doug260188/ubuntu:latest
 
 LABEL maintaner Rodrigo Silva Rodrigues <rsrodrigues.88@hotmail.com>
 
