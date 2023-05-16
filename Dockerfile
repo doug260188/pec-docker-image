@@ -22,6 +22,7 @@ RUN apt-get upgrade -y
 #INSTALL PACKAGES
 RUN apt-get install -y openjdk*
 RUN apt-get install -y wget
+RUN apt-get install -y unzip
 
 #PEC INSTALL
 
