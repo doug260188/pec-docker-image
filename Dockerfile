@@ -25,7 +25,7 @@ RUN apt-get install -y wget
 
 #PEC INSTALL
 
-RUN curl https://arquivos.esusab.ufsc.br/PEC/eRFeiwzHphMOpiWX/3.2.24/treinamento/instalador/Instalador-eSUS-AB-PEC-3.2.24-Treinamento-Linux.zip  -O pec.zip
+RUN wget https://arquivos.esusab.ufsc.br/PEC/eRFeiwzHphMOpiWX/3.2.24/treinamento/instalador/Instalador-eSUS-AB-PEC-3.2.24-Treinamento-Linux.zip  -O pec.zip
 RUN unzip pec.zip -d /home/PEC/install
 WORKDIR /home/PEC/install
 
