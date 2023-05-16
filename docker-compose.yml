@@ -1,7 +1,7 @@
 version: '2'
 services:
   pec-app:
-    image: doug260188/debian:latest
+    image: doug260188/debina:latest
     restart: always
     volumes:
       - ./:/pec-docker/
@@ -13,5 +13,5 @@ services:
       - bash
       - "entrypoint.sh"
     working_dir: /pec-docker/
-    mem_limit: 1g
+    mem_limit: 2g
 
