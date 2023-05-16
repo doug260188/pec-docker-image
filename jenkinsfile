@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Container') {
+        stage('Build Image') {
             steps {
                 script {
                     //Baixando dockerfile
@@ -10,6 +10,14 @@ pipeline {
 
                     //Construindo imagem
                     sh 'docker build -t doug260188/debina:latest .'
+                }
+                }
+                stage('Run Container') {
+                    steps {
+                        
+                    }
+
+                }
                 }
                 
             }
