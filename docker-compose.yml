@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/pec-docker/
     ports:
-      - 8080:8081
+      - 8000:8082
     stdin_open: true
     tty: true
     entrypoint:
