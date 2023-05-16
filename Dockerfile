@@ -24,7 +24,7 @@ RUN apt-get install -y openjdk*
 
 #PEC INSTALL
 
-RUN wget https://arquivos.esusab.ufsc.br/PEC/eRFeiwzHphMOpiWX/3.2.24/treinamento/instalador/Instalador-eSUS-AB-PEC-3.2.24-Treinamento-Linux.zip -O pec.zip
+RUN wget https://arquivos.esusab.ufsc.br/PEC/eRFeiwzHphMOpiWX/3.2.24/treinamento/instalador/Instalador-eSUS-AB-PEC-3.2.24-Treinamento-Linux.zip  /pec.zip
 RUN unzip pec.zip -d /home/PEC/install
 WORKDIR /home/PEC/install
 
