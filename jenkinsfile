@@ -18,10 +18,9 @@ pipeline {
                 sh 'docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'
             }
 
-            }
-            }
-                
         }
+        }
+                
     }
 }
 
