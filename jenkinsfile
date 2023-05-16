@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Container') {
             steps {
-                sh 'docker build -t https://raw.githubusercontent.com/doug260188/pec-docker-image/main/dockeflie .'
+                sh 'docker build  https://raw.githubusercontent.com/doug260188/pec-docker-image/main/dockeflie .'
             }
         }
     }
