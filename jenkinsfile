@@ -14,7 +14,8 @@ pipeline {
                 }
                 stage('Run Container') {
                     steps {
-                        
+                        h 'export PATH=$PATH:/usr/bin'
+                sh 'docker-compose up -d https://raw.githubusercontent.com/doug260188/pec-docker-image/main/docker-compose.yml'
                     }
 
                 }
