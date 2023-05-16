@@ -19,7 +19,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 // Baixando imagem
-                sh 'wget https://raw.githubusercontent.com/doug260188/pec-docker-image/blob/main/docker-compose.yml'
+                sh 'wget https://github.com/doug260188/pec-docker-image/blob/main/docker-compose.yml'
 
                 //Subindo container
                 sh 'docker-compose up -d'
