@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     //Baixando dockerfile
-                    sh 'wget https://raw.githubusercontent.com/doug260188/pec-docker-image/dockerfile'
+                    sh 'wget https://github.com/doug260188/pec-docker-image/dockerfile'
 
                     //Construindo imagem
                     sh 'docker build -t doug260188/debina:latest .'
