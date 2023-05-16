@@ -20,7 +20,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 #INSTALL PACKAGES
-RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y openjdk*
 
 #PEC INSTALL
 
